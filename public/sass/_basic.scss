@@ -1,0 +1,90 @@
+$mainColor: #4b01d4;
+$lightMainColor: #6161f2;
+$light: #eee;
+$white: #fff;
+$black: #000;
+$lightYellow: #faf2c6;
+$lightBg: #f0f3ff;
+$yellow: #fdc840;
+
+///////////////////////////////
+
+@mixin sizing($w: 100%, $h: 100%) {
+  width: $w;
+  height: $h;
+}
+
+@mixin button(
+  $border: none,
+  $outline: none,
+  $background: black,
+  $radius: 0,
+  $padding: 0,
+  $color: white
+) {
+  border: $border;
+  outline: $border;
+  background-color: $background;
+  color: $color;
+  border-radius: $radius;
+  padding: $padding;
+}
+
+@mixin flex($dir: row, $align: center, $justify: center) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin grid($col: 1fr, $row: auto) {
+  display: grid;
+  grid-template-columns: $col;
+  grid-template-rows: $row;
+}
+
+////////////////////////////////
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include sizing(100%, 100vh);
+  font-family: Poppins;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+::-webkit-scrollbar {
+  width: 1px;
+  // display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #88888800;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #55555500;
+}

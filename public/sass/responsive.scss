@@ -1,0 +1,132 @@
+@import "basic";
+
+@media screen and (max-width: 1200px) {
+  .b-3 {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 4rem;
+    z-index: 999;
+  }
+  .b-2 {
+    width: 82%;
+    height: 78%;
+    border-radius: 1rem;
+    z-index: 999;
+    object-fit: cover;
+  }
+  .b-1 {
+    width: 120%;
+    height: 118%;
+    position: absolute;
+    transform: scale(0.88);
+    right: 0;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hide-992 {
+    display: none;
+  }
+  .responsive-btn {
+    display: flex;
+  }
+  .navbar .navbar-logo {
+    width: 10rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hide-768 {
+    display: none;
+  }
+  .navbar .navbar-logo {
+    width: 5rem;
+  }
+  .search-dropdownBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    top: 4rem;
+    border-radius: 0.4rem;
+  }
+  .fade-768 {
+    position: fixed;
+    left: -99999;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .responsive-menu {
+    width: 80%;
+  }
+  .show-mobile {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .main-header__section-leftBox--title {
+    font-size: 1.2rem;
+  }
+  .bottomBar-box {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .bottomBar-box__item {
+    // width: 25%;
+    margin: auto 1rem;
+    p {
+      white-space: nowrap;
+    }
+  }
+  .bottomBar {
+    position: relative;
+    padding-bottom: 1rem;
+  }
+
+  .main-header__section {
+    padding-bottom: 2rem;
+  }
+  .bottomBar-box__item-text {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 0.8rem;
+  }
+  .bottomBar-box__item-text:hover::after {
+    all: unset;
+  }
+  .bottomBar-box__item {
+    background: rgb(243, 243, 243);
+    padding: 0.5rem;
+    border-radius: 2rem;
+    padding: 0.4rem 0.9rem;
+    transition: all 0.5rem;
+  }
+  .bottomBar-box__item:hover {
+    border: 1px solid $mainColor;
+  }
+  .main-header__section-leftBox-rateContent {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .b-2 {
+    z-index: 1;
+  }
+  .responsive-ageRageBox {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hide-576 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+}
